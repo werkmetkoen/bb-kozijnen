@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Logo from '../assets/logo.svg?raw';
+
 const { title = 'BB Kunststof Kozijnen', description = 'Professionele kunststof kozijnen voor particulieren in Nederland.' } = Astro.props;
 ---
 
@@ -24,10 +26,28 @@ const { title = 'BB Kunststof Kozijnen', description = 'Professionele kunststof 
   <body class="bg-white text-[#333333] antialiased">
     <div class="min-h-screen flex flex-col">
       <header class="bg-white border-b border-[#e5e7eb] sticky top-0 z-50">
-        <div class="mx-auto max-w-7xl px-6 py-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <a href="/" class="text-xl font-semibold tracking-tight text-[#2d2d2d]">BB Kunststof Kozijnen</a>
-            <p class="text-sm text-[#666666] mt-1">Kozijnen voor Nederlandse woningen</p>
+        <div class="mx-auto max-w-7xl px-6 py-3 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div class="w-48">
+            <a href="/" class="block hover:opacity-80">
+              <svg viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                <!-- Window frame icon -->
+                <g>
+                  <!-- Outer frame -->
+                  <rect x="10" y="10" width="50" height="50" fill="none" stroke="#1a3a5c" stroke-width="2"/>
+                  <!-- Vertical divider -->
+                  <line x1="35" y1="10" x2="35" y2="60" stroke="#1a3a5c" stroke-width="2"/>
+                  <!-- Horizontal divider -->
+                  <line x1="10" y1="35" x2="60" y2="35" stroke="#1a3a5c" stroke-width="2"/>
+                </g>
+                <!-- Text -->
+                <g>
+                  <!-- Main text "BB Kozijnen" -->
+                  <text x="75" y="38" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="600" fill="#2d2d2d">BB Kozijnen</text>
+                  <!-- Subtext "Kunststof kozijnen op maat" -->
+                  <text x="75" y="58" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" fill="#555555">Kunststof kozijnen op maat</text>
+                </g>
+              </svg>
+            </a>
           </div>
           <nav class="flex flex-wrap items-center gap-3 text-sm text-[#2d2d2d]">
             <a href="/" class="hover:text-[#1a3a5c]">Home</a>
