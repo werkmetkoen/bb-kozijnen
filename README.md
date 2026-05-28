@@ -1,46 +1,50 @@
-# Astro Starter Kit: Basics
+# BB Kunststof Kozijnen
+
+Website voor BB Kunststof Kozijnen, een Nederlands installatiebedrijf voor kunststof kozijnen.
+
+## Project inhoud
+
+- Astro-project met Tailwind CSS
+- Nederlandse website voor particulieren
+- Homepage, 4 productpagina’s (Cube, Trend, Classic, City)
+- Werkwijze, Over ons en Offerte aanvragen
+- Formspree-offerteformulier met placeholder-endpoint
+- Netlify deploymentconfiguratie via `netlify.toml`
+
+## Lokaal draaien
+
+1. Installeer dependencies:
 
 ```sh
-npm create astro@latest -- --template basics
+npm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+2. Start de ontwikkelserver:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+```sh
+npm run dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+3. Open de site in je browser:
 
-## 🧞 Commands
+```sh
+http://localhost:4173
+```
 
-All commands are run from the root of the project, from a terminal:
+4. Om een productiebuild te maken:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```sh
+npm run build
+```
 
-## 👀 Want to learn more?
+5. Om de build lokaal te bekijken:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```sh
+npm run preview
+```
+
+## Netlify deployment
+
+- `netlify.toml` publiceert de `dist`-map
+- `npm run build` is het build-commando
+- Het formulier gebruikt een placeholder Formspree-endpoint: vervang `https://formspree.io/f/your-form-id` met je eigen ID

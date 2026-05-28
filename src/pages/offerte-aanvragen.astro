@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = 'Offerte aanvragen | BB Kunststof Kozijnen';
+const description = 'Vraag een vrijblijvende offerte aan voor kunststof kozijnen. Vul het formulier in en wij nemen contact met u op.';
+---
+
+<Layout {title} {description}>
+  <section class="bg-white text-[#333333]">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <div class="max-w-3xl">
+        <p class="text-sm uppercase tracking-[0.3em] text-[#1a3a5c]">Offerte aanvragen</p>
+        <h1 class="mt-4 text-4xl font-semibold text-[#2d2d2d] sm:text-5xl">Vraag vandaag een vrijblijvende offerte aan</h1>
+        <p class="mt-6 text-[#555555] leading-8">Vul onderstaand formulier in, dan nemen we snel contact met u op om uw project te bespreken.</p>
+      </div>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="mt-12 grid gap-6 rounded-3xl card-light p-8">
+        <div class="grid gap-6 lg:grid-cols-2">
+          <label class="block text-sm text-[#333333]">
+            <span class="text-[#555555]">Naam</span>
+            <input name="name" type="text" required class="mt-2 w-full rounded-2xl border border-[#e5e7eb] bg-white px-4 py-3 text-[#333333] outline-none transition focus:border-[#1a3a5c]" />
+          </label>
+          <label class="block text-sm text-[#333333]">
+            <span class="text-[#555555]">E-mail</span>
+            <input name="email" type="email" required class="mt-2 w-full rounded-2xl border border-[#e5e7eb] bg-white px-4 py-3 text-[#333333] outline-none transition focus:border-[#1a3a5c]" />
+          </label>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-2">
+          <label class="block text-sm text-[#333333]">
+            <span class="text-[#555555]">Telefoonnummer</span>
+            <input name="phone" type="tel" class="mt-2 w-full rounded-2xl border border-[#e5e7eb] bg-white px-4 py-3 text-[#333333] outline-none transition focus:border-[#1a3a5c]" />
+          </label>
+          <label class="block text-sm text-[#333333]">
+            <span class="text-[#555555]">Postcode & woonplaats</span>
+            <input name="address" type="text" required class="mt-2 w-full rounded-2xl border border-[#e5e7eb] bg-white px-4 py-3 text-[#333333] outline-none transition focus:border-[#1a3a5c]" />
+          </label>
+        </div>
+
+        <label class="block text-sm text-[#333333]">
+          <span class="text-[#555555]">Projectomschrijving</span>
+          <textarea name="message" rows="5" class="mt-2 w-full rounded-3xl border border-[#e5e7eb] bg-white px-4 py-3 text-[#333333] outline-none transition focus:border-[#1a3a5c]"></textarea>
+        </label>
+
+        <label class="flex items-center gap-3 text-sm text-[#555555]">
+          <input type="checkbox" name="consent" required class="h-4 w-4 rounded border-[#cbd5e1] bg-white text-[#1a3a5c] focus:ring-[#1a3a5c]" />
+          Ik ga akkoord met algemene voorwaarden en standaard contact.
+        </label>
+
+        <button type="submit" class="btn-primary inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold">Verstuur offerte-aanvraag</button>
+      </form>
+    </div>
+  </section>
+</Layout>
