@@ -25,8 +25,8 @@
 - GitHub template repository concept uitgewerkt
 
 ## Direct op te lossen bij volgende Claude Code sessie
-- Kömmerling encoding fixen (K♦mmerling → Kömmerling) 
-  door hele codebase
+- Kömmerling encoding gefixed (K♦mmerling → Kömmerling) 
+  in index.astro (5 gevallen)
 - Placeholder foto's toevoegen op sleutelposities 
   (homepage werkwijze, over ons, projectenpagina)
 - Desktop dropdown fix — menu verdwijnt bij bewegen 

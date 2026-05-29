@@ -43,3 +43,33 @@ textarea,
 select {
   font: inherit;
 }
+
+
+.breadcrumb {
+  background: transparent;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  color: var(--c-text-cream);
+}
+
+.breadcrumb a {
+  color: var(--c-text-cream);
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.breadcrumb a:hover {
+  color: var(--c-accent);
+  opacity: 1;
+}
+
+.breadcrumb span {
+  color: var(--c-text-cream);
+  opacity: 0.5;
+  margin: 0 0.4rem;
+}
+
+.breadcrumb .current {
+  color: var(--c-accent);
+  opacity: 1;
+}
