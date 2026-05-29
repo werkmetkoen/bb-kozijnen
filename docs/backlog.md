@@ -15,3 +15,7 @@
 - Productpagina's uitwerken met echte foto's
 - Google Ads campagne opzetten
 - Eventueel Roofer template overwegen
+
+## Direct op te lossen bij volgende Claude Code sessie
+- Kömmerling encoding fixen (K♦mmerling → Kömmerling) 
+  door hele codebase
