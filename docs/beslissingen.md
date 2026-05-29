@@ -1,56 +1,44 @@
-# Backlog BB Kozijnen
-*Laatst bijgewerkt: mei 2026*
+## Technische keuzes
+- Framework: Astro + Tailwind CSS als basis, kleuren volledig beheerd via tokens.css (geen WordPress — klant beheert nooit zelf content)
+- Hosting: Netlify (gratis, automatische deployment vanuit GitHub)
+- Formulieren: Formspree (nog te activeren)
+- Domein en e-mail: Hostnet (zelfde als balfoortbouw.nl)
+- Geen CMS — overbodig voor deze klant
 
-## Gereed
-- Eerste versie testsite gebouwd in Astro + Tailwind
-- Live gezet op Netlify
-- Logo SVG aangemaakt en verwerkt in navigatie
-- Reviews en werkgebied (Utrechtse Heuvelrug e.o.) verwerkt
-- Donker kleurenschema doorgevoerd
-- Navigatie uitgebreid met vier hoofdcategorieën en dropdowns
-- Partnerbalk toegevoegd (Unilux, Kömmerling, Smits Kozijnen, Smits Isolatieglas)
-- Teksten van Marko verwerkt op homepage, over ons, isolatieglas, horren
-- Huisstijl gesynchroniseerd met merkidentiteit Balfoort Bouw (antraciet + goud)
-- tokens.css aangemaakt als centrale kleurenbeheer
-- Huisstijl.md bijgewerkt en op GitHub gezet
+## Businesskeuzes
+- Koen bouwt zelf ipv uitbesteden aan Myra (Sites & Search)
+- Foto's van schipperkozijnen.nl als placeholder — toestemming nog nodig
+- Werkgebied: Utrechtse Heuvelrug, Utrecht, De Meern, Veenendaal en omstreken
+- Referentiesite: ekkozijnen.nl — structuur en diepgang als richtlijn
+- Scope uitgebreid van 8 naar 23 pagina's na input Marko (mei 2026)
+- Offerte bijgesteld: 41 uur, €2.665 excl. BTW
 
-## Wacht op Claude Code (bezig)
-- Productpagina's aanmaken (23 pagina's gebouwd)
-- Submenu links naar productpagina's
-- Kleurstructuur via tokens.css volledig doorgevoerd
+## Typografie (mei 2026)
+- Logo naam: Raleway bold — strak, sans-serif, 
+  zoals bedrijfsnaam op busje
+- Logo tagline: Playfair Display italic — elegant, 
+  zoals "Kwaliteit zit in details" op busje
+- H1 koppen: Playfair Display serif
+- Navigatie en labels: Raleway, gespatieerd
+- Reden: directe vertaling van merkidentiteit busje 
+  naar website
 
-## Wacht op Marko
-- Logo (in dezelfde stijl als busje)
-- Domeinnaam bevestigen
-- Foto's van uitgevoerde projecten
-- Productinfo aluminium kozijnen
-- Toestemming foto's schipperkozijnen.nl
-- Akkoord op offerte
+## Kleurpalet update (mei 2026)
+- --c-dark aangepast van #222222 naar #1e1a17
+  (warmere antraciet met bruinige ondertoon)
+- --c-accent aangepast van #c8922a naar #b07535
+  (warmere bronzige goudtint dichter bij busje)
+- Reden: nauwkeurigere match met bestaande 
+  merkidentiteit Balfoort Bouw
 
-## Volgende stappen na akkoord Marko
-- Offerte versturen (klaar als docx)
-- Formspree activeren met echt formulier-ID
-- Domein koppelen via Hostnet
-- Eigen projectfoto's verwerken
-- Google Ads campagne opzetten parallel aan bouw
-
-## Technische werkregels
-- Kleuren altijd via tokens.css, nooit hardcoded
-- Commits na elke sessie naar GitHub
-- Netlify update automatisch na elke push
-
-## CSS-architectuur (mei 2026)
-
-**Beslissing:** Eén centraal tokens.css bestand met alle kleuren 
-en herbruikbare component-klassen.
-
-**Werkregels:**
-- Nooit kleurwaarden hardcoderen buiten tokens.css
-- Nooit !important gebruiken — als het nodig is klopt de structuur niet
-- Secties krijgen altijd section-dark, section-light of section-brown
-- Knoppen altijd btn-primary of btn-secondary
-- Kaarten altijd card-dark of card-light
-
-**Reden:** Eerdere aanpak met losse fixes per component leidde tot 
-inconsistente kleuren en conflicten. Dit systeem is schaalbaar — 
-één aanpassing in tokens.css past de hele site aan.
+  ## CSS-architectuur (mei 2026)
+- Eén centraal tokens.css bestand met alle kleuren 
+  en herbruikbare component-klassen
+- Werkregels:
+  - Nooit kleurwaarden hardcoderen buiten tokens.css
+  - Nooit !important gebruiken
+  - Secties: altijd section-dark, section-light of section-brown
+  - Knoppen: altijd btn-primary of btn-secondary
+  - Kaarten: altijd card-dark of card-light
+- Reden: eerdere aanpak met losse fixes per component leidde 
+  tot inconsistente kleuren en conflicten
