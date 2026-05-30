@@ -11,52 +11,60 @@
 - tokens.css aangemaakt als centrale kleurenbeheer
 - CSS volledig gerefactored — section-dark/light/brown, 
   btn-primary/secondary, card-dark/light
-- Navigatie uitgebreid met vier hoofdcategorieën en dropdowns
+- Navigatie geherstructureerd — Producten dropdown met 4 items,
+  Projecten, Over ons, Werkwijze, Offerte aanvragen
+- Dropdown hover-fix via ::before brug — werkt stabiel op desktop
 - Partnerbalk toegevoegd (Unilux, Kömmerling, Smits Kozijnen, 
   Smits Isolatieglas)
 - Teksten van Marko verwerkt op homepage, over ons, 
   isolatieglas en horren
-- 23 pagina's gebouwd inclusief alle productpagina's 
+- 24 pagina's gebouwd inclusief alle productpagina's 
   en subcategorieën
-- Mobiel hamburger menu gebouwd
+- Mobiel hamburger menu gebouwd — logo links, hamburger rechts
 - Playfair Display en Raleway geladen via Google Fonts
 - CLAUDE.md aangemaakt als werkinstructiebestand
 - Huisstijl gesynchroniseerd met merkidentiteit Balfoort Bouw
-- GitHub template repository concept uitgewerkt
+- GitHub template repository aangemaakt (astro-project-template)
+- Kömmerling encoding definitief opgelost (UTF-8, alle bestanden)
+- Sterren en streepjes encoding gefixed in reviews
+- Breadcrumb verbeterd — subtiel, › scheidingsteken, 
+  transparante achtergrond
+- Label in hoofdletters verwijderd van 15 productpagina's
+- Offerte opgesteld als Word-document (41 uur, €2.665 excl. BTW)
+- Mail aan Marko gestuurd met testlink en samenvatting wensen
 
 ## Direct op te lossen bij volgende Claude Code sessie
-- Kömmerling encoding gefixed (K♦mmerling → Kömmerling) 
-  in index.astro (5 gevallen)
-- Placeholder foto's toevoegen op sleutelposities 
+- Placeholder foto's toevoegen op sleutelposities
   (homepage werkwijze, over ons, projectenpagina)
-- Desktop dropdown fix — menu verdwijnt bij bewegen 
-  naar submenu
 - Intro-teksten subpagina's controleren op leesbaarheid
+- .gitattributes toevoegen voor line-ending consistentie
 
 ## Wacht op Marko
-- Logo in stijl van busje (definitief)
+- Definitief logo (stijl busje)
 - Domeinnaam bevestigen
 - Foto's van uitgevoerde projecten — gevels, 
   kozijndetails, interieurs
 - Foto van Marko zelf voor Over ons pagina
 - Productinfo aluminium kozijnen
 - Toestemming foto's schipperkozijnen.nl
-- Akkoord op offerte
+- Akkoord op offerte (41 uur, €2.665 excl. BTW)
+- Akkoord op scope (24 pagina's, vier productcategorieën)
 - Reactie op bijgestelde offerte
-- Bevestiging scope (23 pagina's akkoord?)
 
 ## Volgende stappen na akkoord Marko
 - Offerte versturen (klaar als docx)
 - Formspree activeren met echt formulier-ID
 - Domein koppelen via Hostnet
 - Eigen projectfoto's verwerken
-- Google Ads campagne opzetten parallel aan bouw
 - Placeholder foto's vervangen door eigen materiaal
-- Alumni kozijnen pagina uitwerken met echte content
-- Reviews koppelen aan Google (Marko heeft Google reviews)
+- Aluminium kozijnen pagina uitwerken met echte content
+- Reviews koppelen aan Google
+- Google Ads campagne opzetten parallel aan bouw
 
 ## Technische werkregels
 - Kleuren altijd via tokens.css, nooit hardcoded
 - Nooit !important gebruiken
 - Commits na elke sessie naar GitHub
 - Netlify update automatisch na elke push
+- Copilot en Claude Code zitten beide in VS Code — 
+  gebruik alleen Claude Code (sterretje-icoon)
